@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="css/E14formulario.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post">
+        <fieldset class="datos">
+            <legend>Datos personales</legend>
+            <ul>
+                <li>
+                    <label for="name">Nombre</label>
+                    <input type="name" placeholder="Escribe el nombre" required tabindex="1">
+                </li>
+                <li>
+                    <label for="correo">E-mail</label>
+                    <input id="correo" type="email" pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" placeholder="Escribe el mail" required tabindex="2">
+                </li>
+                <li>
+                    <label for="web">Página web</label>
+                    <input id="web" type="url" placeholder="Escribe la url con https://" tabindex="3">
+                </li>
+                <li class="comentario">
+                    <label for="comentar">Comentario</label>
+                    <textarea id="comentar" placeholder="Escribe un comentario" tabindex="4"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="cuadraicos">
+            <legend>Aprueba esto o... morirás</legend>
+            <ul>
+                <li>
+                    <input id="condiciones" type="checkbox" required tabindex="5">
+                    <label for="condiciones">Al completar y enviar este formulario de registro acepta expresamente las Condiciones Generales de Uso del Servicio incluyendo la Política de Protección de Datos y Privacidad.</label>
+                </li>
+                <li>
+                    <input id="comercial" type="checkbox" checked tabindex="6">
+                    <label for="comercial">No deseo recibir comunicaciones comerciales relativas a productos y servicios de terceros.</label>
+                </li>
+            </ul>
+        </fieldset>
+        <ul class="botones">
+            <li>
+                <button type="reset" tabindex="7">BORRAR</button>
+            </li>
+            <li>
+                <button type="submit" tabindex="8">ENVIAR</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

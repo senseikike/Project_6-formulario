@@ -1,0 +1,63 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(70deg, rgb(184, 184, 255), pink);
+}
+
+legend {
+    margin-left: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.datos {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datos ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datos ul li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.cuadraicos {
+    border: none;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.botones li button:hover {
+    font-weight: bold;
+}
+
+.botones li button:hover {
+    background-color: rgb(127, 255, 206);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li input {
+    margin-bottom: 20px;  
+}
+
+ul li textarea {
+    display: flex;
+}
